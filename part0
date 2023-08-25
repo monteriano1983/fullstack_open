@@ -1,0 +1,20 @@
+0.4
+Usuario->Navegador: Crea una nueva nota
+Navegador->Servidor: Realiza solicitud POST con los datos
+Servidor->Base de Datos: Almacena la nueva nota
+Base de Datos-->Servidor: Confirma el almacenamiento
+Servidor->Navegador: Responde con éxito, actualiza la vista
+
+0.5
+Usuario->Navegador: Ingresa a https://studies.cs.helsinki.fi/exampleapp/spa
+Navegador->Servidor: Carga archivos HTML, JS y CSS
+Servidor->Navegador: Envía archivos necesarios
+Navegador->Usuario: Muestra la interfaz de la SPA
+Usuario->Navegador: Explora las notas existentes
+Navegador->Navegador: Procesa la acción internamente
+Navegador->Usuario: Carga y muestra las notas almacenadas
+
+0.6
+Usuario->Navegador: Crea una nueva nota
+Navegador->Navegador: Procesa la acción internamente
+Navegador->Usuario: Actualiza la vista con la nueva nota
